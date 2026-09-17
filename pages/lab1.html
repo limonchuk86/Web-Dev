@@ -22,3 +22,51 @@
             </ul>
         </nav>
     </div>
+    <main>
+        <h2 style="text-align: center;">Реєстрація користувача</h2>
+        
+        <form action="https://webhook.site/fcff0840-c287-49cb-9dde-8a3e3c6624b8" method="POST" class="registration-form">
+            
+            <div class="form-group">
+                <label for="firstName">Ім'я:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Прізвище:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="email" name="userEmail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="userPassword" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Підтвердження паролю:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+
+            <div class="form-group">
+                <label for="birthDate">Дата народження (необов'язково):</label>
+                <input type="date" id="birthDate" name="birthDate">
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Стать (необов'язково):</label>
+                <select id="gender" name="userGender">
+                    <option value="">Оберіть стать</option>
+                    <option value="male">Чоловіча</option>
+                    <option value="female">Жіноча</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Відправити дані" class="submit-btn">
+        </form>
+    </main>
+</body>
