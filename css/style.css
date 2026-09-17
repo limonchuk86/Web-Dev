@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background: #0056b3;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ffd700;
+}
+
+main {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.tab-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    background-color: #e9ecef;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.tab-btn:hover {
+    background-color: #d3d9df;
+}
+
+/* Стиль для натиснутої (активної) кнопки */
+.tab-btn.active {
+    background-color: #0056b3;
+    color: white;
+    border-color: #0056b3;
+}
+
+/* Ховаємо всі таблиці за замовчуванням */
+.tab-content {
+    display: none;
+}
+
+/* Показуємо тільки ту таблицю, яка активна */
+.tab-content.active {
+    display: block;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}

@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практична робота 1 - Розклад</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <div class="sticky-top">
+        <header>
+            <h1>Практична робота №1</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Головна</a></li>
+                <li><a href="../index.html#about">Про мене</a></li>
+                <li><a href="../index.html#pr">Практичні роботи</a></li>
+                <li><a href="../index.html#labs">Лабораторні заняття</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h2>Розклад занять</h2>
+        <!-- Кнопки -->
+        <div class="tab-buttons">
+            <button class="tab-btn active" onclick="openWeek(event, 'week1')">(14.09 - 20.09)</button>
+            <button class="tab-btn" onclick="openWeek(event, 'week2')">(21.09 - 27.09)</button>
+            <button class="tab-btn" onclick="openWeek(event, 'week3')">(28.09 - 04.10)</button>
+            <button class="tab-btn" onclick="openWeek(event, 'week4')">(05.10 - 11.10)</button>
+            <button class="tab-btn" onclick="openWeek(event, 'week5')">(12.10 - 18.10)</button>
+            <button class="tab-btn" onclick="openWeek(event, 'week6')">(19.10 - 25.10)</button>
+            <button class="tab-btn" onclick="openWeek(event, 'week7')">(26.10 - 01.11)</button>
+            <button class="tab-btn" onclick="openWeek(event, 'week8')">(02.11 - 08.11)</button>
+        </div>
+
+
+        <div id="week1" class="tab-content active">
+            <table border="1" style="width: 100%; border-collapse: collapse; text-align: center;">
+                <tr style="background-color: #0056b3; color: white;">
+                    <th>День тижня</th>
+                    <th>№ пари</th>
+                    <th>Час</th>
+                    <th>Дисципліна</th>
+                    <th>Викладач</th>
+                    <th>Аудиторія</th>
+                </tr>
+            <tr>
+                <td rowspan="2">Понеділок</td>
+                <td>1</td>
+                <td>08:00 - 09:20</td>
+                <td>Вища математика (Лекція)</td>
+                <td>Білоусова С.В .</td>
+                <td>Дистанц.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>09:30 - 10:50</td>
+                <td>Українська мова за професійним спрямуванням (Лекція)</td>
+                <td>Даниленко Л.В.</td>
+                <td>Дистанц.</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Вівторок</td>
+                <td>2</td>
+                <td>09:30 - 10:50</td>
+                <td>Фізичне виховання (Практика)</td>
+                <td>Двірник В.Г.</td>
+                <td>Стадіон</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>11:10 - 12:30</td>
+                <td>Англійська мова для професійної комунікації (Практика)</td>
+                <td>Харицька С.В.</td>
+                <td>Ауд. 320</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Середа</td>
+                <td>1</td>
+                <td>08:00 - 09:20</td>
+                <td>Web-технології та Web-дизайн (Практика)</td>
+                <td>Дзюба В.В.</td>
+                <td>Ауд. 211</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>09:30 - 10:50</td>
+                <td>Українська мова за професійним спрямуванням (Практика)</td>
+                <td>Даниленко Л.В.</td>
+                <td>Ауд. 301</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>11:10 - 12:30</td>
+                <td>Філософія (Семінар)</td>
+                <td>Кошетар У.П.</td>
+                <td>Ауд. 0-13</td>
+            </tr>
+            <tr>
+                <td>Четвер</td>
+                <td>1</td>
+                <td>08:00 - 09:20</td>
+                <td>Web-технології та Web-дизайн (Практика)</td>
+                <td>Дзюба В.В.</td>
+                <td>Дистанц.</td>
+            </tr>
+            <tr>
+                <td>П’ятниця</td>
+                 <td colspan="5" style="padding: 5px; color: gray;"> Немає пар </td>
+            </tr>
+             <tr>
+                <td>Субота</td>
+                <td>1</td>
+                <td>09:30 - 10:50</td>
+                <td>Іноваційне підприємництво та управління стартап проєктами (Практика)</td>
+                <td>Ганенко Л.Д.</td>
+                <td>Дистанц.</td>
+            </tr>
+             <tr>
+                <td>Неділя</td>
+                 <td colspan="5" style="padding: 5px; color: gray;"> Немає пар </td>
+            </tr>
+            </table>
+        </div>
+
+        <div id="week2" class="tab-content">
+                   <table border="1" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: center;">
+            <tr style="background-color: #0056b3; color: white;">
+                <th>День тижня</th>
+                <th>№ пари</th>
+                <th>Час</th>
+                <th>Дисципліна</th>
+                <th>Викладач</th>
+                <th>Аудиторія</th>
+             <tr>
+                <td rowspan="3">Понеділок</td>
+                <td>2</td>
+                <td>09:30 - 10:50</td>
+                <td>Об'єктно-орієнтоване програмування C# (Лекція)</td>
+                <td>Гавор А.С.</td>
+                <td>Дистанц.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>11:10 - 12:30</td>
+                <td>Філософія (Лекція)</td>
+                <td>Кошетар У.П.</td>
+                <td>Дистанц.</td>
+            </tr>
+             <tr>
+                <td>6</td>
+                <td>15:40 - 17:00</td>
+                <td>Іноваційне підприємництво та управління стартап проєктами (Лекція)</td>
+                <td>Ганенко Л.Д.</td>
+                <td>Дистанц.</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Вівторок</td>
+                <td>1</td>
+                <td>08:00 - 09:20</td>
+                <td>Об'єктно-орієнтоване програмування C# (Практика)</td>
+                <td>Гавор А.С.</td>
+                <td>Ауд. 310</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>09:30 - 10:50</td>
+                <td>Об'єктно-орієнтоване програмування C# (Лабораторна)</td>
+                <td>Гавор А.С.</td>
+                <td>Ауд. 325</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>11:10 - 12:30</td>
+                <td>Англійська мова для професійної комунікації (Практика)</td>
+                <td>Харицька С.В.</td>
+                <td>Ауд. 320</td>
+            </tr>
+            <tr>
+                <td rowspan="1">Середа</td>
+                <td>1</td>
+                <td>08:00 - 09:20</td>
+                <td>Web-технології та Web-дизайн (Практика)</td>
+                <td>Дзюба В.В.</td>
+                <td>Ауд. 211</td>
+            </tr>
+            <tr>
+                <td>Четвер</td>
+                 <td colspan="5" style="padding: 5px; color: gray;"> Немає пар </td>
+            </tr>
+            <tr>
+                <td>П’ятниця</td>
+                 <td colspan="5" style="padding: 5px; color: gray;"> Немає пар </td> 
+            </tr>
+             <tr>
+                <td>Субота</td>
+                <td>1</td>
+                <td>09:30 - 10:50</td>
+                <td>Іноваційне підприємництво та управління стартап проєктами (Лабораторна)</td>
+                <td>Ганенко Л.Д.</td>
+                <td>Дистанц.</td>
+            </tr>
+             <tr>
+                <td>Неділя</td>
+                 <td colspan="5" style="padding: 5px; color: gray;"> Немає пар </td>
+            </tr>
+            </table>
+        </div>
+
+        <div id="week3" class="tab-content">
+                   <table border="1" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: center;">
+            <tr style="background-color: #0056b3; color: white;">
+                <th>День тижня</th>
+                <th>№ пари</th>
+                <th>Час</th>
+                <th>Дисципліна</th>
+                <th>Викладач</th>
+                <th>Аудиторія</th>
+            </tr>
+             <tr>
+                <td rowspan="2">Понеділок</td>
+                <td>1</td>
+                <td>08:00 - 09:20</td>
+                <td>Вища математика (Лекція)</td>
+                <td>Білоусова С.В .</td>
+                <td>Дистанц.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>09:30 - 10:50</td>
+                <td>Українська мова за професійним спрямуванням (Лекція)</td>
+                <td>Даниленко Л.В.</td>
+                <td>Дистанц.</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Вівторок</td>
+                <td>2</td>
+                <td>09:30 - 10:50</td>
+                <td>Фізичне виховання (Практика)</td>
+                <td>Двірник В.Г.</td>
+                <td>Стадіон</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>11:10 - 12:30</td>
+                <td>Англійська мова для професійної комунікації (Практика)</td>
+                <td>Харицька С.В.</td>
+                <td>Ауд. 320</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Середа</td>
+                <td>1</td>
+                <td>08:00 - 09:20</td>
+                <td>Web-технології та Web-дизайн (Практика)</td>
+                <td>Дзюба В.В.</td>
+                <td>Ауд. 211</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>09:30 - 10:50</td>
+                <td>Українська мова за професійним спрямуванням (Практика)</td>
+                <td>Даниленко Л.В.</td>
+                <td>Ауд. 301</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>11:10 - 12:30</td>
+                <td>Філософія (Семінар)</td>
+                <td>Кошетар У.П.</td>
+                <td>Ауд. 0-13</td>
+            </tr>
+            <tr>
+                <td>Четвер</td>
+                <td>1</td>
+                <td>08:00 - 09:20</td>
+                <td>Web-технології та Web-дизайн (Практика)</td>
+                <td>Дзюба В.В.</td>
+                <td>Дистанц.</td>
+            </tr>
+            <tr>
+                <td>П’ятниця</td>
+                 <td colspan="5" style="padding: 5px; color: gray;"> Немає пар </td>
+            </tr>
+             <tr>
+                <td>Субота</td>
+                <td>1</td>
+                <td>09:30 - 10:50</td>
+                <td>Іноваційне підприємництво та управління стартап проєктами (Практика)</td>
+                <td>Ганенко Л.Д.</td>
+                <td>Дистанц.</td>
+            </tr>
+             <tr>
+                <td>Неділя</td>
+                 <td colspan="5" style="padding: 5px; color: gray;"> Немає пар </td>
+            </tr>
+            </table>
+        </div>
+
+
+        <div id="week4" class="tab-content">
+                   <table border="1" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: center;">
+            <tr style="background-color: #0056b3; color: white;">
+                <th>День тижня</th>
+                <th>№ пари</th>
+                <th>Час</th>
+                <th>Дисципліна</th>
+                <th>Викладач</th>
+                <th>Аудиторія</th>
+             <tr>
+                <td rowspan="3">Понеділок</td>
+                <td>2</td>
+                <td>09:30 - 10:50</td>
+                <td>Об'єктно-орієнтоване програмування C# (Лекція)</td>
+                <td>Гавор А.С.</td>
+                <td>Дистанц.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>11:10 - 12:30</td>
+                <td>Філософія (Лекція)</td>
+                <td>Кошетар У.П.</td>
+                <td>Дистанц.</td>
+            </tr>
+             <tr>
+                <td>6</td>
+                <td>15:40 - 17:00</td>
+                <td>Іноваційне підприємництво та управління стартап проєктами (Лекція)</td>
+                <td>Ганенко Л.Д.</td>
+                <td>Дистанц.</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Вівторок</td>
+                <td>1</td>
+                <td>08:00 - 09:20</td>
+                <td>Об'єктно-орієнтоване програмування C# (Практика)</td>
+                <td>Гавор А.С.</td>
+                <td>Ауд. 310</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>09:30 - 10:50</td>
+                <td>Об'єктно-орієнтоване програмування C# (Лабораторна)</td>
+                <td>Гавор А.С.</td>
+                <td>Ауд. 325</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>11:10 - 12:30</td>
+                <td>Англійська мова для професійної комунікації (Практика)</td>
+                <td>Харицька С.В.</td>
+                <td>Ауд. 320</td>
+            </tr>
+            <tr>
+                <td rowspan="1">Середа</td>
+                <td>1</td>
+                <td>08:00 - 09:20</td>
+                <td>Web-технології та Web-дизайн (Практика)</td>
+                <td>Дзюба В.В.</td>
+                <td>Ауд. 211</td>
+            </tr>
+            <tr>
+                <td>Четвер</td>
+                 <td colspan="5" style="padding: 5px; color: gray;"> Немає пар </td>
+            </tr>
+            <tr>
+                <td>П’ятниця</td>
+                 <td colspan="5" style="padding: 5px; color: gray;"> Немає пар </td> 
+            </tr>
+             <tr>
+                <td>Субота</td>
+                <td>1</td>
+                <td>09:30 - 10:50</td>
+                <td>Іноваційне підприємництво та управління стартап проєктами (Лабораторна)</td>
+                <td>Ганенко Л.Д.</td>
+                <td>Дистанц.</td>
+            </tr>
+             <tr>
+                <td>Неділя</td>
+                 <td colspan="5" style="padding: 5px; color: gray;"> Немає пар </td>
+            </tr>
+            </tr>
+            </table>
+        </div>
+
+        <div id="week5" class="tab-content">
+                   <table border="1" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: center;">
+            <tr style="background-color: #0056b3; color: white;">
+                <th>День тижня</th>
+                <th>№ пари</th>
+                <th>Час</th>
+                <th>Дисципліна</th>
+                <th>Викладач</th>
+                <th>Аудиторія</th>
+            </tr>
+             <tr>
+                <td rowspan="2">Понеділок</td>
+                <td>1</td>
+                <td>08:00 - 09:20</td>
+                <td>Вища математика (Лекція)</td>
+                <td>Білоусова С.В .</td>
+                <td>Дистанц.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>09:30 - 10:50</td>
+                <td>Українська мова за професійним спрямуванням (Лекція)</td>
+                <td>Даниленко Л.В.</td>
+                <td>Дистанц.</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Вівторок</td>
+                <td>2</td>
+                <td>09:30 - 10:50</td>
+                <td>Фізичне виховання (Практика)</td>
+                <td>Двірник В.Г.</td>
+                <td>Стадіон</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>11:10 - 12:30</td>
+                <td>Англійська мова для професійної комунікації (Практика)</td>
+                <td>Харицька С.В.</td>
+                <td>Ауд. 320</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Середа</td>
+                <td>1</td>
+                <td>08:00 - 09:20</td>
+                <td>Web-технології та Web-дизайн (Практика)</td>
+                <td>Дзюба В.В.</td>
+                <td>Ауд. 211</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>09:30 - 10:50</td>
+                <td>Українська мова за професійним спрямуванням (Практика)</td>
+                <td>Даниленко Л.В.</td>
+                <td>Ауд. 301</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>11:10 - 12:30</td>
+                <td>Філософія (Семінар)</td>
+                <td>Кошетар У.П.</td>
+                <td>Ауд. 0-13</td>
+            </tr>
+            <tr>
+                <td>Четвер</td>
+                <td>1</td>
+                <td>08:00 - 09:20</td>
+                <td>Web-технології та Web-дизайн (Практика)</td>
+                <td>Дзюба В.В.</td>
+                <td>Дистанц.</td>
+            </tr>
+            <tr>
+                <td>П’ятниця</td>
+                 <td colspan="5" style="padding: 5px; color: gray;"> Немає пар </td>
+            </tr>
+             <tr>
+                <td>Субота</td>
+                <td>1</td>
+                <td>09:30 - 10:50</td>
+                <td>Іноваційне підприємництво та управління стартап проєктами (Практика)</td>
+                <td>Ганенко Л.Д.</td>
+                <td>Дистанц.</td>
+            </tr>
+             <tr>
+                <td>Неділя</td>
+                 <td colspan="5" style="padding: 5px; color: gray;"> Немає пар </td>
+            </tr>
+            </table>
+        </div>
+
+        <div id="week6" class="tab-content">
+                   <table border="1" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: center;">
+            <tr style="background-color: #0056b3; color: white;">
+                <th>День тижня</th>
+                <th>№ пари</th>
+                <th>Час</th>
+                <th>Дисципліна</th>
+                <th>Викладач</th>
+                <th>Аудиторія</th>
+             <tr>
+                <td rowspan="3">Понеділок</td>
+                <td>2</td>
+                <td>09:30 - 10:50</td>
+                <td>Об'єктно-орієнтоване програмування C# (Лекція)</td>
+                <td>Гавор А.С.</td>
+                <td>Дистанц.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>11:10 - 12:30</td>
+                <td>Філософія (Лекція)</td>
+                <td>Кошетар У.П.</td>
+                <td>Дистанц.</td>
+            </tr>
+             <tr>
+                <td>6</td>
+                <td>15:40 - 17:00</td>
+                <td>Іноваційне підприємництво та управління стартап проєктами (Лекція)</td>
+                <td>Ганенко Л.Д.</td>
+                <td>Дистанц.</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Вівторок</td>
+                <td>1</td>
+                <td>08:00 - 09:20</td>
+                <td>Об'єктно-орієнтоване програмування C# (Практика)</td>
+                <td>Гавор А.С.</td>
+                <td>Ауд. 310</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>09:30 - 10:50</td>
+                <td>Об'єктно-орієнтоване програмування C# (Лабораторна)</td>
+                <td>Гавор А.С.</td>
+                <td>Ауд. 325</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>11:10 - 12:30</td>
+                <td>Англійська мова для професійної комунікації (Практика)</td>
+                <td>Харицька С.В.</td>
+                <td>Ауд. 320</td>
+            </tr>
+            <tr>
+                <td rowspan="1">Середа</td>
+                <td>1</td>
+                <td>08:00 - 09:20</td>
+                <td>Web-технології та Web-дизайн (Практика)</td>
+                <td>Дзюба В.В.</td>
+                <td>Ауд. 211</td>
+            </tr>
+            <tr>
+                <td>Четвер</td>
+                 <td colspan="5" style="padding: 5px; color: gray;"> Немає пар </td>
+            </tr>
+            <tr>
+                <td>П’ятниця</td>
+                 <td colspan="5" style="padding: 5px; color: gray;"> Немає пар </td> 
+            </tr>
+             <tr>
+                <td>Субота</td>
+                <td>1</td>
+                <td>09:30 - 10:50</td>
+                <td>Іноваційне підприємництво та управління стартап проєктами (Лабораторна)</td>
+                <td>Ганенко Л.Д.</td>
+                <td>Дистанц.</td>
+            </tr>
+             <tr>
+                <td>Неділя</td>
+                 <td colspan="5" style="padding: 5px; color: gray;"> Немає пар </td>
+            </tr>
+            </tr>
+            </table>
+        </div>
+        <div id="week7" class="tab-content">
+                   <table border="1" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: center;">
+            <tr style="background-color: #0056b3; color: white;">
+                <th>День тижня</th>
+                <th>№ пари</th>
+                <th>Час</th>
+                <th>Дисципліна</th>
+                <th>Викладач</th>
+                <th>Аудиторія</th>
+            </tr>
+            <tr>
+                 <td colspan="6" style="padding: 5px; color: gray;"> Розклад відсутній </td>
+            </tr>
+            </table>
+        </div>
+        <div id="week8" class="tab-content">
+                   <table border="1" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: center;">
+            <tr style="background-color: #0056b3; color: white;">
+                <th>День тижня</th>
+                <th>№ пари</th>
+                <th>Час</th>
+                <th>Дисципліна</th>
+                <th>Викладач</th>
+                <th>Аудиторія</th>
+            </tr>
+            <tr>
+                 <td colspan="6" style="padding: 5px; color: gray;"> Розклад відсутній </td>
+            </tr>
+            </table>
+        </div>
+        
+
+        <!-- ================= СКРИПТ ПЕРЕМИКАННЯ ================= -->
+        <script>
+            function openWeek(evt, weekName) {
+                // Ховаємо всі елементи з класом tab-content
+                let tabContents = document.getElementsByClassName("tab-content");
+                for (let i = 0; i < tabContents.length; i++) {
+                    tabContents[i].classList.remove("active");
+                }
+                
+                // Знімаємо виділення з усіх кнопок
+                let tabBtns = document.getElementsByClassName("tab-btn");
+                for (let i = 0; i < tabBtns.length; i++) {
+                    tabBtns[i].classList.remove("active");
+                }
+                
+                // Показуємо потрібну таблицю і підсвічуємо натиснуту кнопку
+                document.getElementById(weekName).classList.add("active");
+                evt.currentTarget.classList.add("active");
+            }
+        </script>
+        </table>
+    </main>
+
+</body>
+</html>
