@@ -109,51 +109,65 @@ footer {
     z-index: 1000;
 }
 
-/* Стилі для форми реєстрації */
+
+/* Стилізація форми Пр 2 */
 .registration-form {
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 25px;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    /* a. Колір фону та тексту */
+    background-color: #ffffff;
+    color: #2c3e50;
+    
+    /* b. Ширина та внутрішні відступи (padding) */
+    width: 100%;
+    max-width: 450px;
+    padding: 30px 40px; 
+    
+    /* c. Закруглені кути */
+    border-radius: 12px;
+    
+    /* d. Тінь */
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15); 
+    
+    /* e. Позиціювання */
+    position: relative; 
+    margin: 50px auto; /* auto по горизонталі центрує форму по центру екрана */
+    
+    /* Додатково: легка рамка для чіткості */
+    border: 1px solid #e0e0e0;
 }
 
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #333;
-}
-
+/* Стилізація інпутів для кращого вигляду */
 .form-group input, .form-group select {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
     font-size: 16px;
-    font-family: inherit;
+    transition: 0.3s border-color; /* Анімація і переходи (пункт 10 мети) */
 }
 
+/* Ефект при наведенні або кліку на поле */
+.form-group input:focus, .form-group select:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+/* Оновлена кнопка з ефектами */
 .submit-btn {
     width: 100%;
-    padding: 12px;
-    background: #0056b3;
-    color: white;
+    padding: 14px;
+    background-color: #0056b3;
+    color: #ffffff;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
-    margin-top: 10px;
+    transition: all 0.3s ease; /* Плавний перехід при наведенні */
+    margin-top: 15px;
 }
 
 .submit-btn:hover {
-    background: #004494;
+    background-color: #004494;
+    box-shadow: 0px 5px 15px rgba(0, 86, 179, 0.4);
+    transform: translateY(-2px); /* Кнопка трохи "підстрибує" при наведенні */
 }

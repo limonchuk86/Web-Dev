@@ -1,0 +1,79 @@
+/* 1. Перший елемент <li> - жирний шрифт */
+li:first-child {
+    font-weight: bold;
+}
+
+/* 2. Елементи <a>, які є останніми дочірніми елементами - червоний колір */
+a:last-child {
+    color: red;
+}
+
+/* 3. Елементи input, які вимкнено (disabled) - сірий фоновий колір */
+input:disabled {
+    background-color: gray;
+}
+
+/* 4. Елементи <p>, які є прямими дочірніми елементами <div> - напівжирний шрифт */
+div > p {
+    font-weight: 600; 
+}
+
+/* 5. Елементи з атрибутом href, що починається з https - зелений колір */
+[href^="https"] {
+    color: green;
+}
+
+/* 6. Елементи input з type="text" - синя рамка 1 піксель */
+input[type="text"] {
+    border: 1px solid blue;
+}
+
+/* 7. Елементи <li>, які є першими або останніми дочірніми елементами - розмір шрифту 24px */
+li:first-child, li:last-child {
+    font-size: 24px;
+}
+
+/* 8. Елементи <p>, які є нащадками <div> - розмір шрифту 16px */
+div p {
+    font-size: 16px;
+}
+
+/* 9. Елементи <input> зі значенням checked - світло-блакитний фон */
+input:checked {
+    background-color: lightblue;
+}
+
+/* 10. Елементи <a>, які є прямими дочірніми елементами <li> - підкреслений текст */
+li > a {
+    text-decoration: underline; 
+}
+
+/* 11. Елементи <li>, які є парними елементами батька - жирний шрифт */
+li:nth-child(even) {
+    font-weight: bold;
+}
+
+/* 12. Елементи <input> з type="text" і НЕ disabled - сірий фон */
+input[type="text"]:not(:disabled) {
+    background-color: lightgray; 
+}
+
+/* 13. Елементи <p>, які є першими дочірніми елементами - розмір шрифту 24px */
+p:first-child {
+    font-size: 24px;
+}
+
+/* 14. Елемент <li>, який йде одразу після елементу .special - перекреслений текст */
+.special + li {
+    text-decoration: line-through;
+}
+
+/* 15. Перша літера кожного елемента <p> - розмір шрифту 36px */
+p::first-letter {
+    font-size: 36px;
+}
+
+/* 16. Додати ::after для кожного елемента <a> з вмістом ↗ */
+a::after {
+    content: " ↗";
+}
